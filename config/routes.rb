@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   resources :cards
   # RESTful routes
   resources :examples, except: %i[new edit]
+  resources :cards, except: %i[new edit]
+  resources :likes, except: %i[new edit]
+  resources :comments, except: %i[new edit]
 
   # Custom routes
   post '/sign-up' => 'users#signup'
