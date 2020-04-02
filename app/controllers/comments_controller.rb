@@ -5,11 +5,8 @@ class CommentsController < OpenReadController
 
   # GET /comments
   def index
-    @comments = if params[:user_comments]
-                  current_user.comments
-                else
-                  Comment.all
-                end
+    @comments = Comment.all
+
     render json: @comments
   end
 
