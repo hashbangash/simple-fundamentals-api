@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_03_31_172831) do
 
   create_table "comments", force: :cascade do |t|
     t.text "commentText"
+    t.string "author"
     t.bigint "user_id"
     t.bigint "card_id"
     t.datetime "created_at", null: false
