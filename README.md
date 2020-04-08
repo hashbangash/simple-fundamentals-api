@@ -4,8 +4,6 @@
 ## about
 This app shows definitions of fundamental terms to programming and gives simple, accessible definitions. Once signed in, users can add comments to these flashcards. They can also edit and delete their comments.
 
-![screenshot of the app]()
-
 ## links
 - [front-end/production live link, i.e. the actual webiste](https://hashbangash.github.io/simple-fundamentals-client/)
 - [front-end/api repository](https://github.com/hashbangash/simple-fundamentals-client) -- please visit this link to read about my planning, process, and problem-solving.
@@ -36,3 +34,6 @@ You can deploy your own site on your Heroku if you've forked and cloned this rep
 - POST https://simple-fundamentals.herokuapp.com/comments
 - PATCH https://simple-fundamentals.herokuapp.com/comments/:id
 - DELETE https://simple-fundamentals.herokuapp.com/comments/:id
+
+## unsolved issues
+I give out way too much information with my API. I give our user IDs on unauthenticated routes. My goal for the future is to synchronize authenticated routes on the front-end and back-end.
